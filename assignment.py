@@ -14,13 +14,10 @@ def calculateprice():
 
 if size == "1" or size == "2":
     size = int(size)
-        if toppings == "0" or toppings == "1" or toppings == "2" or toppings == "3" toppings == "4":
-            toppings = int(toppings)
-            if toppings <= 4 and toppings >= 0:
-                calculateprice()
-            else:
-                print("Input not in range of topppings.")
+    if toppings == "0" or toppings == "1" or toppings == "2" or toppings == "3" toppings == "4":
+        toppings = int(toppings)
+        calculateprice()
     else:
-        print("Input not in range of menu.")
+        print("Input not in range of topppings.")
 else:
     print("Please input a numerical value from the menu")
