@@ -24,8 +24,8 @@
     $topprices = [0.00, 1.00, 1.75, 2.50, 3.35];
 
     if ( isset( $_POST['size']) and isset( $_POST['toppings'])) {
-      $myVariable = $_POST['size'];
-      $myVariable = $_POST['toppings'];
+      $size = $_POST['size'];
+      $toppings = $_POST['toppings'];
       $tax = $pizzaprices[$size - 1] * 0.13 + $topprices[$topprices - 0] * 0.13;
       $price = $pizzaprices[$size - 1] + $topprices[$topprices - 0] + $tax;
       echo "<p class=\"paragraph\">You ordered item ".$size." and ".$toppings." toppings
